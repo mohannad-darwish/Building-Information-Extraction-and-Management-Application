@@ -74,6 +74,8 @@ for door in ifc_file.by_type("IfcDoor"):
 
     # Get property
     u_value = Element.get_pset(door, "Pset_DoorCommon", "ThermalTransmittance")
+
+    #Get storey
     storey = Element.get_container(door).Name if Element.get_container(door) else None
 
 

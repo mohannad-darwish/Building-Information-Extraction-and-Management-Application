@@ -3,6 +3,7 @@ package com.example;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.util.List;
+import java.io.PrintWriter;
 
 
 
@@ -21,33 +22,37 @@ public class Main {
             List<Room> rooms = building.getRooms();
             List<Door> doors = building.getDoors();
 
-            // Print rooms
-            System.out.println("ROOMS:");
+            // Create a writer for the output file
+            PrintWriter writer = new PrintWriter("version_summary.txt");
+            
+            writer.println("ROOMS:");
             for (Room room : rooms) {
-                System.out.println("---------------");
-                System.out.println("GUID: " + room.getGuid());
-                System.out.println("Name: " + room.getName());
-                System.out.println("Long Name: " + room.getLongName());
-                System.out.println("Storey: " + room.getStorey());
-                System.out.println("Area: " + room.getNetFloorArea());
-                System.out.println("Volume: " + room.getNetVolume());
-                System.out.println("AirConditioning: " + room.getAirConditioning());
-                System.out.println("Connected Doors: " + room.getConnectedDoors());
+                writer.println("---------------");
+                writer.println("GUID: " + room.getGuid());
+                writer.println("Name: " + room.getName());
+                writer.println("Long Name: " + room.getLongName());
+                writer.println("Area: " + room.getNetFloorArea());
+                writer.println("Volume: " + room.getNetVolume());
+                writer.println("AirConditioning: " + room.getAirConditioning());
+                writer.println("Connected Doors: " + room.getConnectedDoors());
             }
 
             // Print doors
-            System.out.println("\nDOORS:");
+            writer.println("\nDOORS:");
             for (Door door : doors) {
-                System.out.println("---------------");
-                System.out.println("GUID: " + door.getGuid());
-                System.out.println("Name: " + door.getName());
-                System.out.println("Width: " + door.getOverallWidth());
-                System.out.println("Height: " + door.getOverallHeight());
-                System.out.println("Area: " + door.getArea());
-                System.out.println("Volume: " + door.getVolume());
-                System.out.println("Thermal Transmittance: " + door.getThermalTransmittance());
-                System.out.println("Storey: " + door.getStorey());
+                writer.println("---------------");
+                writer.println("GUID: " + door.getGuid());
+                writer.println("Name: " + door.getName());
+                writer.println("Width: " + door.getOverallWidth());
+                writer.println("Height: " + door.getOverallHeight());
+                writer.println("Thermal Transmittance: " + door.getThermalTransmittance());
+                writer.println("Storey: " + door.getStorey());
             }
+
+            // Close the writer to save the file
+            writer.close();
+
+            System.out.println("✅ Summary exported to version_summary.txt");
 
         } catch (Exception e) {
             System.err.println("Failed to load or parse JSON:");

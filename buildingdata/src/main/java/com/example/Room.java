@@ -14,9 +14,6 @@ public class Room {
     @JsonProperty("LongName")
     private String longName;
 
-    @JsonProperty("Storey")
-    private String storey;
-
     @JsonProperty("NetFloorArea")
     private Double netFloorArea;
 
@@ -33,13 +30,12 @@ public class Room {
     public Room() {}
 
     // Parameterized constructor
-    public Room(String guid, String name, String longName, String storey,
+    public Room(String guid, String name, String longName,
                 Double netFloorArea, Double netVolume,
                 List<String> connectedDoors, String airConditioning) {
         this.guid = guid;
         this.name = name;
         this.longName = longName;
-        this.storey = storey;
         this.netFloorArea = netFloorArea;
         this.netVolume = netVolume;
         this.connectedDoors = connectedDoors;
@@ -50,7 +46,6 @@ public class Room {
     public String getGuid() { return guid; }
     public String getName() { return name; }
     public String getLongName() { return longName; }
-    public String getStorey() { return storey; }
     public Double getNetFloorArea() { return netFloorArea; }
     public Double getNetVolume() { return netVolume; }
     public List<String> getConnectedDoors() { return connectedDoors; }
@@ -60,7 +55,6 @@ public class Room {
     public void setGuid(String guid) { this.guid = guid; }
     public void setName(String name) { this.name = name; }
     public void setLongName(String longName) { this.longName = longName; }
-    public void setStorey(String storey) { this.storey = storey; }
     public void setNetFloorArea(Double netFloorArea) { this.netFloorArea = netFloorArea; }
     public void setNetVolume(Double netVolume) { this.netVolume = netVolume; }
     public void setConnectedDoors(List<String> connectedDoors) { this.connectedDoors = connectedDoors; }

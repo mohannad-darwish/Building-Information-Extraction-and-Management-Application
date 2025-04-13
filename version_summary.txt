@@ -1,0 +1,94 @@
+ROOMS:
+---------------
+GUID: 347jFE2yX7IhCEIALmupEH
+Name: 4
+Long Name: Schlafzimmer
+Area: 91.64
+Volume: 55.18
+AirConditioning: false
+Connected Doors: [Innentuer-1]
+---------------
+GUID: 0e_hbkIQ5DMQlIJ$2V3j_m
+Name: 3
+Long Name: Bad
+Area: 60.41
+Volume: 31.26
+AirConditioning: false
+Connected Doors: [Innentuer-2]
+---------------
+GUID: 2RSCzLOBz4FAK$_wE8VckM
+Name: 2
+Long Name: Buero
+Area: 62.02
+Volume: 32.46
+AirConditioning: false
+Connected Doors: [Innentuer-3]
+---------------
+GUID: 0Lt8gR_E9ESeGH5uY_g9e9
+Name: 5
+Long Name: Wohnen
+Area: 105.55
+Volume: 64.97
+AirConditioning: false
+Connected Doors: [Terrassentuer]
+---------------
+GUID: 3$f2p7VyLB7eox67SA_zKE
+Name: 1
+Long Name: Flur
+Area: 68.95
+Volume: 28.66
+AirConditioning: false
+Connected Doors: [Innentuer-3, Innentuer-2, Innentuer-1, Haustuer]
+---------------
+GUID: 17JZcMFrf5tOftUTidA0d3
+Name: 6
+Long Name: Küche
+Area: 73.14
+Volume: 40.76
+AirConditioning: false
+Connected Doors: []
+---------------
+GUID: 2dQFggKBb1fOc1CqZDIDlx
+Name: 7
+Long Name: Galerie
+Area: 284.41
+Volume: 217.53
+AirConditioning: false
+Connected Doors: []
+
+DOORS:
+---------------
+GUID: 1Oms875aH3Wg$9l65H2ZGw
+Name: Innentuer-1
+Width: 0.885
+Height: 2.01
+Thermal Transmittance: 2.0
+Storey: Erdgeschoss
+---------------
+GUID: 0pGAjlJMP3ifYPATVF5xAR
+Name: Innentuer-2
+Width: 0.885
+Height: 2.01
+Thermal Transmittance: 2.0
+Storey: Erdgeschoss
+---------------
+GUID: 2qiPPF3FrF8OIqfrKiSUqm
+Name: Innentuer-3
+Width: 0.885
+Height: 2.01
+Thermal Transmittance: 2.0
+Storey: Erdgeschoss
+---------------
+GUID: 2jTRqchjf7oB0yhQ6462T0
+Name: Haustuer
+Width: 1.01
+Height: 2.01
+Thermal Transmittance: 1.4
+Storey: Erdgeschoss
+---------------
+GUID: 1M$gxUrX1Fiwe3P64ww7U5
+Name: Terrassentuer
+Width: 2.01
+Height: 2.375
+Thermal Transmittance: 1.4
+Storey: Erdgeschoss
