@@ -5,14 +5,14 @@ Name: 4
 Long Name: Schlafzimmer
 Area: 91.64
 Volume: 55.18
-AirConditioning: false
+AirConditioning: true
 Connected Doors: [Innentuer-1]
 ---------------
 GUID: 0e_hbkIQ5DMQlIJ$2V3j_m
 Name: 3
 Long Name: Bad
-Area: 60.41
-Volume: 31.26
+Area: 70.41
+Volume: 41.26
 AirConditioning: false
 Connected Doors: [Innentuer-2]
 ---------------
@@ -81,14 +81,7 @@ Storey: Erdgeschoss
 ---------------
 GUID: 2jTRqchjf7oB0yhQ6462T0
 Name: Haustuer
-Width: 1.01
-Height: 2.01
-Thermal Transmittance: 1.4
-Storey: Erdgeschoss
----------------
-GUID: 1M$gxUrX1Fiwe3P64ww7U5
-Name: Terrassentuer
-Width: 2.01
-Height: 2.375
+Width: 1.5
+Height: 2.5
 Thermal Transmittance: 1.4
 Storey: Erdgeschoss

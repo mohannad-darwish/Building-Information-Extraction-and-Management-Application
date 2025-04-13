@@ -13,7 +13,7 @@ public class Main {
             // Load the JSON file and parse it into the BuildingData class
             ObjectMapper mapper = new ObjectMapper();
             BuildingData building = mapper.readValue(
-                new File("D:/TU Berlin/CSE/Modellierung in der Bauinformatik/Assignment 2/Building-Information-Extraction-and-Management-Application/building_elements_output.json"),
+                new File("D:/TU Berlin/CSE/Modellierung in der Bauinformatik/Assignment 2/Building-Information-Extraction-and-Management-Application/building_elements_output - Version 2.json"),
 
                     BuildingData.class
             );
